@@ -1,1 +1,0 @@
-print("sudo rm -rf /*")
