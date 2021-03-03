@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código del Doc</title>
+    <title class="Prueba1">Código del Doc</title>
 </head>
 
+<h1 class="Prueba1">Holo
+</h1>
+
 <body>
+
     <section>
         <article>
+            <p>El concierto fué el <time datetime="2001-05-15T19:00">15 de Mayo</time>.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque velit iure voluptas voluptatibus sit earum numquam sunt, soluta vel mollitia ipsa distinctio vero laudantium, magni animi rerum consequatur vitae.</p>
 
             <style>
                 .Prueba1 {
-                    color: blue;
+                    color: darkmagenta;
+                    font-size: small;
                 }
             </style>
+
+            <section class="Prueba1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vero reprehenderit nihil animi dolores officia, adipisci enim optio voluptatibus praesentium natus magnam quia iure eligendi quo eaque ea amet magni.
+            </section>
 
             <p class="Prueba1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, at. Architecto pariatur nihil sunt enim sint rerum laborum nesciunt illo maxime molestias, expedita quaerat quibusdam blanditiis fugit, soluta ut dolorum.</p>
 
@@ -33,10 +43,32 @@
 
             <script>
                 let p = document.getElementById('text')
-
                 console.log(p.textContent)
-                    //p.textContent = "Nooo"
+                p.textContent = "Nooo"
             </script>
+        </article>
+
+        <h3>
+            Lista de alumnos
+        </h3>
+        <article>
+            <ul>
+                <li>
+                    Karla Susana Guzmán Velazqez
+                </li>
+                <li>Claudio Sebastian Romero Montes de Oca</li>
+            </ul>
+
+            <!--Un ejemplo de uso podría ser un menu-->
+            <h4>
+                TEMAS DEL CURSO
+            </h4>
+            <ol>
+                <li>Historia de la web</li>
+                <li>HTML</li>
+                <li>Sintaxis</li>
+                <li>Atributos</li>
+            </ol>
         </article>
     </section>
 </body>
