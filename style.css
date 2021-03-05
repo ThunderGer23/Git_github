@@ -39,3 +39,12 @@ header{
 .classno{
   color:cyan;
 }
+
+.indexframe{
+  border-color: white;
+  border-width: medium;
+}
+
+a{
+  text-decoration: none;
+}

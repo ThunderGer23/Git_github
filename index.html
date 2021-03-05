@@ -19,7 +19,31 @@
     </header>
 
     <main>
-      <section>
+      <section id="index" class="index">
+        <header>CONTENIDOS DEL CURSO</header>
+        <div class="indexframe textblock">
+          <br><br><a href="#c1">1.- CLASE 1</a>
+          <br><br><a href="#1.1">&emsp;&emsp;1.1.- Introducción a la Web</a>
+          <br><br><a href="#c2">2.- CLASE 2</a>
+          <br><br><a href="#2.1">&emsp;&emsp;2.1.- Elementos de Bloque en HTML</a>
+          <br><br><a href="#2.1.1">&emsp;&emsp;&emsp;&emsp;2.1.1.- Section</a>
+          <br><br><a href="#2.1.2">&emsp;&emsp;&emsp;&emsp;2.1.2.- Article</a>
+          <br><br><a href="#2.2">&emsp;&emsp;2.2.- Elementos de Linea</a>
+          <br><br><a href="#2.3">&emsp;&emsp;2.3.- Elementos de Linea de Ponderación</a>
+          <br><br><a href="#2.4">&emsp;&emsp;2.4.- Imagen 1.1.1</a>
+          <br><br><a href="#c3">3.- CLASE 3</a>
+          <br><br><a href="#3.1">&emsp;&emsp;3.1.- Atributos</a>
+          <br><br><a href="#c4">4.- CLASE 4</a>
+          <br><br><a href="#4.1">&emsp;&emsp;4.1.- Enlace</a>
+          <br><br><a href="#4.2">&emsp;&emsp;4.2.- Target</a>
+          <br><br><a href="#4.3">&emsp;&emsp;4.3.- Download</a>
+          <br><br><a href="#4.4">&emsp;&emsp;4.4.- Saltos entre etiquetas</a>
+
+        </div>
+        <footer></footer>
+      </section>
+
+      <section id="c1">
         <header class="classno">
           <br>&emsp;<br>
           <h2><i> ► Clase 1</i></h2>
@@ -27,7 +51,7 @@
 
         <div>
 
-          <article class="mainarticle">
+          <article class="mainarticle" id="1.1">
             <header>
               <h3><b>Introducción a la Web</b></h3>
             </header>
@@ -54,7 +78,7 @@
               IP, sin embargo, para comunicarse con un servidor, un cliente normalmente
               utiliza un servicio DNS, que asocia la dirección IP del servidor con un
               nombre más fácil de recordar, como por ejemplo
-              <a href="http://www.google.com">www.google.com</a> que es  más fácil de
+              <a href="http://www.google.com" target="_blank">www.google.com</a> que es  más fácil de
               recordar que una dirección tipo 254.254.254.254.
               <br><br><br>
               Al momento que realizamos una conexión con un sitio web a través de este
@@ -71,7 +95,7 @@
             </div>
 
             <footer>
-              <p>&emsp;</p>
+              <p><a href="#index">Volver al inicio</a>&emsp;</p>
             </footer>
           </article>
 
@@ -79,14 +103,14 @@
 
       </section>
 
-      <section>
+      <section id="c2">
         <header class="classno">
           <br>&emsp;<br>
           <h2><i> ► Clase 2</i></h2>
         </header>
 
         <div>
-          <article class="mainarticle">
+          <article class="mainarticle" id="2.1">
             <header>
               <h3><b>Elementos de bloque en HTML</b></h3>
             </header>
@@ -105,7 +129,7 @@
             </footer>
           </article>
 
-          <article class="subarticle">
+          <article class="subarticle" id="2.1.1">
             <header>
               <h4><b>Section</b></h4>
             </header>
@@ -120,7 +144,7 @@
             </footer>
           </article>
 
-          <article class="subarticle">
+          <article class="subarticle" id="2.1.2">
             <header>
               <h4><b>Article</b></h4>
             </header>
@@ -135,7 +159,7 @@
             </footer>
           </article>
 
-          <article class="mainarticle">
+          <article class="mainarticle" id="2.2">
             <header>
               <h3><b>Elementos de Linea</b></h3>
             </header>
@@ -152,7 +176,7 @@
             </footer>
           </article>
 
-          <article class="mainarticle">
+          <article class="mainarticle" id="2.3">
             <header>
               <h3><b>Elementos de Linea de Ponderación</b></h3>
             </header>
@@ -169,23 +193,27 @@
             </footer>
           </article>
 
-          <article class="mainarticle">
+          <article class="mainarticle" id="2.4">
             <header>
               <h3><b>Imagen 1.1.1</b></h3>
             </header>
-
             <div class="imgblock">
-              <img src="download.png" alt="download.png" width="500" style="text-align:center;">
+              <section>
+                <header></header>
+                <a href="download.png" download><img src="download.png" alt="download.png" width="500" style="text-align:center;"></a>
+                <footer><h6>&emsp;&gt;&gt;&gt;¡Haz click en la imagen!&lt;&lt;&lt;</h6></footer>
+              </section>
             </div>
 
             <footer>
+              <p><a href="#index">Volver al inicio</a>&emsp;</p>
             </footer>
           </article>
         </div>
 
       </section>
 
-      <section>
+      <section id="c3">
         <header class="classno">
           <br>&emsp;<br>
           <br>&emsp;<br>
@@ -194,7 +222,7 @@
 
         <div>
 
-          <article class="mainarticle">
+          <article class="mainarticle" id="3.1">
             <header>
               <h3><b>Atributos</b></h3>
             </header>
@@ -212,7 +240,108 @@
             </div>
 
             <footer>
+              <p><a href="#index">Volver al inicio</a>&emsp;</p>
+            </footer>
+          </article>
+
+        </div>
+
+      </section>
+
+      <section id="c4">
+        <header class="classno">
+          <br>&emsp;<br>
+          <br>&emsp;<br>
+          <h2><i> ► Clase 4</i></h2>
+        </header>
+
+        <div>
+          <article class="mainarticle" id="4.1">
+            <header>
+              <h3><b>Enlace</b></h3>
+            </header>
+
+            <div class="textblock">
+              Los enlaces o links sirven para conectar una página web con otra,
+              y se pueden utilizar como un recurso tanto interno como externo.
+              <br><br><br>
+              Llevan el atributo obligatorio href, en el cuál se especifica la
+              ruta que se va a utilizar.
+              <br><br><br>
+              Si ambos documentos están en la misma ubicación, basta con colocar
+              el nombre del archivo, de lo contrario habrá que especificar la
+              ruta completa.
+              <br><br>
+              Su sintáxis es:
+              <br><br>
+              &lt;a href="http://ww.url.com"&gt;Texto&lt;/a&gt;
+              <br><br><br>
+              Existen 2 tipos de rutas, que son las siguientes:
+              <br>
+              <br>► Relativas:
+              <br>&emsp;&emsp;Pueden ser relativas al punto donde nos encontramos o
+                a la raíz del proyecto.
+              <br><br>► Absolutas:
+              <br>&emsp;&emsp;Tienen un protocolo http o https y son únicas en la red.
+              se suelen utiliar para rutas ajenas al sistema.
+            </div>
+
+            <footer>
               <p></p>
+            </footer>
+          </article>
+
+          <article class="mainarticle" id="4.2">
+            <header>
+              <h3><b>Target</b></h3>
+            </header>
+
+            <div class="textblock">
+              Se coloca de manera inmediata después del href, de la siguiente forma:
+              <br><br>
+              &lt;a href="" target="_blank"&gt; &lt;/a&gt;
+              <br><br>
+              y su principal uso es definir el modo de apertura del recurso solcitado.
+              el valor sólo puede ser _self o _blank, siendo _self el valor por defecto.
+            </div>
+
+            <footer>
+              <p></p>
+            </footer>
+          </article>
+
+          <article class="mainarticle" id="4.3">
+            <header>
+              <h3><b>Download</b></h3>
+            </header>
+
+            <div class="textblock">
+              Es un atributo tipo booleano, sirve para poder descargar el recurso
+              solicitado. Dicho recurso debe encontrarse en nuestro servidor para
+              poder ejecutarlo. su sintáxis es
+              <br><br>
+              &lt;a href="" download&gt; &lt;/a&gt;
+            </div>
+
+            <footer>
+              <p></p>
+            </footer>
+          </article>
+
+          <article class="mainarticle" id="4.4">
+            <header>
+              <h3><b>Saltos entre etiquetas</b></h3>
+            </header>
+
+            <div class="textblock">
+              A demás de llevar a otras páginas, href también puede llevarnos a
+              otros lugars dentro dde la misma página, a través del uso de un id.
+              <br><br>
+              &lt;a href="#id"&gt;Texto&lt;/a&gt;
+            </div>
+
+            <footer>
+              <p><a href="#index">Volver al inicio</a>&emsp;</p>
             </footer>
           </article>
 
