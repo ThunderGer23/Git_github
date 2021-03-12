@@ -6,6 +6,7 @@
 }
 .textblock{
   justify-content:center;
+  align-content: center;
   background-color:#575773;
   padding-left:30px;
   padding-right:30px;
@@ -47,4 +48,17 @@ header{
 
 a{
   text-decoration: none;
+}
+
+.codeblock{
+  justify-content: center;
+  align-items: center;
+  padding: 50;
+  background-color: blue;
+  display: flex;
+}
+
+table, th, td {
+  border: 1px solid black;
+  width:100%;
 }
