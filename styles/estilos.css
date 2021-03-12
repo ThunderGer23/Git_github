@@ -1,0 +1,42 @@
+.Titulo {
+    color: orange;
+    font-size: 3em;
+}
+
+.TituloMain {
+    color: orange;
+    font-size: 3em;
+}
+
+.Texto {
+    font-size: 2em;
+}
+
+.Especificacion {
+    font-size: 2em;
+}
+
+.Significado {
+    font-size: 2em;
+    color: springgreen;
+}
+
+.Tiempo {
+    font-size: 2em;
+}
+
+.indice {
+    font-size: 2em;
+}
+
+.Regreso {
+    font-size: 2em;
+}
+
+.ranton {
+    max-width: 20em;
+}
+
+.Cita {
+    font-size: 2em;
+}
