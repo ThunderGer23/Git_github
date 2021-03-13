@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código del Doc</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/estilos.css">
+    <title class="Prueba1">Código del Doc</title>
 </head>
+
+<h1 class="Prueba1">Holo</h1>
+<h1>Test</h1>
+
 <body>
-    
+    <section>
+        <h2>Lista de alumnos</h2>
+        <article>
+            <ul type="circle">
+                <li>Karla Susana Guzmán Velazqez</li>
+                <li>Claudio Sebastian Romero Montes de Oca</li>
+            </ul>
+
+            <!--Un ejemplo de uso podría ser un menu-->
+            <h4>TEMAS DEL CURSO</h4>
+            <ol>
+                <li>Historia de la web</li>
+                <li>HTML</li>
+                <li>Sintaxis</li>
+                <li>Atributos</li>
+            </ol>
+        </article>
+    </section>
+
+    <section>
+        <table>
+            <caption>Horario</caption>
+            <thead>
+                <th>Hora</th>
+                <th>Lun</th>
+                <th>Ma</th>
+                <th>Mie</th>
+                <th>Jue</th>
+                <th>Vie</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:30 - 10:00</td>
+                    <td>Señales</td>
+                    <td>PDS</td>
+                    <td>Ingeniería Web</td>
+                    <td>Telefonía</td>
+                </tr>
+
+                <tr>
+                    <td>10:00 - 11:30</td>
+                    <td>Sistemas celulares</td>
+                    <td>Aplicaciones Distribuidas</td>
+                    <td>Ingeniería Web</td>
+                    <td>Algebra booleana</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Horario Gerardo</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section>
+        <form>
+            <h2>Edad</h2>
+
+            <label>-18<input type="radio" name="age" /></label>
+            <label>18/25<input type="radio" name="age" /></label>
+            <label>25/35<input type="radio" name="age" /></label>
+            <h2>Saludos</h2>
+            <div>
+                <label><input type="checkbox" name="saludo" />Holi</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="saludo"/>Hola</label>
+            </div>
+
+            <h2>Lenguajes</h2>
+            <select name="lenguajes">
+                <optgroup label="Entornos web">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Ninguno" selected>Ninguno toy chikito :c</option>
+                </optgroup>
+                <optgroup label="DeepLearning">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Matlab">Matlab</option>
+                </optgroup>
+            </select>
+
+            <input type="list" list="Lenguajes">
+            <datalist id="Lenguajes">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Matlab">Matlab</option>
+            </datalist>
+        </form>
+    </section>
 </body>
+
 </html>
