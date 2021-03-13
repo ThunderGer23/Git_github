@@ -1,114 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" style="background-color:black; color:white;">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/estilos.css">
-    <title class="Prueba1">Código del Doc</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
 </head>
 
-<h1 class="Prueba1">Holo</h1>
-<h1>Test</h1>
-
 <body>
-    <section>
-        <h2>Lista de alumnos</h2>
-        <article>
-            <ul type="circle">
-                <li>Karla Susana Guzmán Velazqez</li>
-                <li>Claudio Sebastian Romero Montes de Oca</li>
-            </ul>
+    <div id="root"></div>
+    <script src="main.js"></script>
 
-            <!--Un ejemplo de uso podría ser un menu-->
-            <h4>TEMAS DEL CURSO</h4>
-            <ol>
-                <li>Historia de la web</li>
-                <li>HTML</li>
-                <li>Sintaxis</li>
-                <li>Atributos</li>
-            </ol>
-        </article>
-    </section>
+    <header class="maintitle">
+        <h1>
+            <u><em>C U R S O&emsp;&emsp;H T M L</em></u>
+            <br>
+        </h1>
+    </header>
 
-    <section>
-        <table>
-            <caption>Horario</caption>
-            <thead>
-                <th>Hora</th>
-                <th>Lun</th>
-                <th>Ma</th>
-                <th>Mie</th>
-                <th>Jue</th>
-                <th>Vie</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>8:30 - 10:00</td>
-                    <td>Señales</td>
-                    <td>PDS</td>
-                    <td>Ingeniería Web</td>
-                    <td>Telefonía</td>
-                </tr>
-
-                <tr>
-                    <td>10:00 - 11:30</td>
-                    <td>Sistemas celulares</td>
-                    <td>Aplicaciones Distribuidas</td>
-                    <td>Ingeniería Web</td>
-                    <td>Algebra booleana</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td>Horario Gerardo</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
-    <section>
-        <form>
-            <h2>Edad</h2>
-
-            <label>-18<input type="radio" name="age" /></label>
-            <label>18/25<input type="radio" name="age" /></label>
-            <label>25/35<input type="radio" name="age" /></label>
-            <h2>Saludos</h2>
-            <div>
-                <label><input type="checkbox" name="saludo" />Holi</label>
+    <main>
+        <section id="index" class="index">
+            <header>CONTENIDOS DEL CURSO</header>
+            <div class="indexframe textblock">
+                <ul type="none">
+                    <li><a href="#c1">1.- CLASE 1</a></li>
+                    <li><a href="#1.1">&emsp;&emsp;1.1.- Introducción a la Web</a></li>
+                    <li><a href="#c2">2.- CLASE 2</a></li>
+                    <li><a href="#2.1">&emsp;&emsp;2.1.- Elementos de Bloque en HTML</a></li>
+                    <li><a href="#2.1.1">&emsp;&emsp;&emsp;&emsp;2.1.1.- Section</a></li>
+                    <li><a href="#2.1.2">&emsp;&emsp;&emsp;&emsp;2.1.2.- Article</a></li>
+                    <li><a href="#2.2">&emsp;&emsp;2.2.- Elementos de Linea</a></li>
+                    <li><a href="#2.3">&emsp;&emsp;2.3.- Elementos de Linea de Ponderación</a></li>
+                    <li><a href="#2.4">&emsp;&emsp;2.4.- Imagen 1.1.1</a></li>
+                    <li><a href="#c3">3.- CLASE 3</a></li>
+                    <li><a href="#3.1">&emsp;&emsp;3.1.- Atributos</a></li>
+                    <li><a href="#c4">4.- CLASE 4</a></li>
+                    <li><a href="#4.1">&emsp;&emsp;4.1.- Enlace</a></li>
+                    <li><a href="#4.2">&emsp;&emsp;4.2.- Target</a></li>
+                    <li><a href="#4.3">&emsp;&emsp;4.3.- Download</a></li>
+                    <li><a href="#4.4">&emsp;&emsp;4.4.- Saltos entre etiquetas</a></li>
+                </ul>
             </div>
+            <footer></footer>
+        </section>
+
+        <section id="c1">
+            <header class="classno">
+                <br>&emsp;<br>
+                <h2><i> ► Clase 1</i></h2>
+            </header>
+
             <div>
-                <label><input type="checkbox" name="saludo"/>Hola</label>
+
+                <article class="mainarticle" id="1.1">
+                    <header>
+                        <h3><b>Introducción a la Web</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Siendo el internet una herramienta fundamental hoy día, es necesario conocer ampliamente su funcionamiento, tanto como un todo, así como los componentes que lo conforman.
+                        <br><br><br> Los sítios web funcionan a partir del modelo cliente-servidor, es decir, un dispositivo final conectado a un servidor para obtener información de lo que conocemos como internet.
+                        <br><br><br> Un cliente, como ya se dijo antes, es un dispositivo que solicita información y una vez teniéndola la consume según esté programado. El cliente usualmente es el que tiene contacto directo con el usuario, y está programado
+                        para trabajar de forma local.
+                        <br><br><br> Un servidor es un dispositivo que guarda toda la información de un servicio, mismo que presta a varios clientes a través de internet, ya sea de almacenamiento o procesamiento.
+                        <br><br><br> Tanto cliente como servidor se comunican a través del uso de direcciones IP, sin embargo, para comunicarse con un servidor, un cliente normalmente utiliza un servicio DNS, que asocia la dirección IP del servidor con
+                        un nombre más fácil de recordar, como por ejemplo
+                        <a href="http://www.google.com" target="_blank">www.google.com</a> que es más fácil de recordar que una dirección tipo 254.254.254.254.
+                        <br><br><br> Al momento que realizamos una conexión con un sitio web a través de este método, lo que nos devuelve el sitio web es la página de inicio de dicho sitio, generalmente creada en un archivo llamado <i><b>"index.html"</b></i>.
+                        <br><br><br> Este sitio, como su extensión lo indica, está creado en HTML, que es un lenguaje de etiquetas por el cuál se carga el contenido visual de un sitio web. Cabe destacar que HTML es un lenguaje estructurado, o sea, que
+                        genera el contenido en el orden en el que está escrito, y conforme el explorador de internet lo va interpretando.
+                        <br><br><br>
+                        <b>IMPORTANTE: HTML NO ES UN LENGUAJE DE PROGRAMACIÓN!</b>
+                    </div>
+
+                    <footer>
+                        <p><a href="#index">Volver al inicio</a>&emsp;</p>
+                    </footer>
+                </article>
+
             </div>
 
-            <h2>Lenguajes</h2>
-            <select name="lenguajes">
-                <optgroup label="Entornos web">
-                    <option value="HTML">HTML</option>
-                    <option value="CSS">CSS</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="Ninguno" selected>Ninguno toy chikito :c</option>
-                </optgroup>
-                <optgroup label="DeepLearning">
-                    <option value="Python">Python</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="Matlab">Matlab</option>
-                </optgroup>
-            </select>
+        </section>
 
-            <input type="list" list="Lenguajes">
-            <datalist id="Lenguajes">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="Python">Python</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="Matlab">Matlab</option>
-            </datalist>
-        </form>
-    </section>
+        <section id="c2">
+            <header class="classno">
+                <br>&emsp;<br>
+                <h2><i> ► Clase 2</i></h2>
+            </header>
+
+            <div>
+                <article class="mainarticle" id="2.1">
+                    <header>
+                        <h3><b>Elementos de bloque en HTML</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        En general, los elementos de bloque se definen como elementos que, sin importar su contenido, ocupan totalmente el espacio horizontal de la pantalla.
+                        <br><br><br> Cuando hablamos de elementos de bloque en HTML podemos mencionar 2 elementos muy importantes al momento de administrar la información.
+                        <br><br><br> Estos son Article y Section, y funcionan de la manera mencionada a continuación.
+                    </div>
+
+                    <footer>
+                    </footer>
+                </article>
+
+                <article class="subarticle" id="2.1.1">
+                    <header>
+                        <h4><b>Section</b></h4>
+                    </header>
+
+                    <div class="textblock">
+                        La etiqueta &lt;section&gt; funciona como un contenedor genérico que agrupa contenido relacionado entre sí. Cuando se necesita agrupar contenido en un sólo bloque total es que se utiliza section.
+                    </div>
+
+                    <footer>
+                    </footer>
+                </article>
+
+                <article class="subarticle" id="2.1.2">
+                    <header>
+                        <h4><b>Article</b></h4>
+                    </header>
+
+                    <div class="textblock">
+                        A diferencia de &lt;section&gt;, &lt;article&gt; sirve para agrupar contenido que tiene contexto propio, de manera que no importa desde dónde se cite, es contenido claro y de facil comprensión.
+                    </div>
+
+                    <footer>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="2.2">
+                    <header>
+                        <h3><b>Elementos de Linea</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Se consideran elementos de linea a aquellos que se manejan sólamente en una linea del código HTML, y que ocupan sólamente el espacio que estos requieren.
+                        <br><br><br> El más notable de estos es el salto de línea, que se llama con la etiqueta &lt;br&gt;, y, como su nombre lo indica, da un salto a la siguiente linea.
+                    </div>
+
+                    <footer>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="2.3">
+                    <header>
+                        <h3><b>Elementos de Linea de Ponderación</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Así mismo, tenemos elementos de linea de Ponderación, que se encargan de dar prioridad a un elemento sobre otro al momento de presentarlos en pantalla.
+                        <br><br><br> Los más conocidos de estos son las etiquetas &lt;em&gt; y &lt;strong&gt;. Cabe aclarar que la etiqueta &lt;em&gt; tiene una prioridad mayor que la etiqueta &lt;strong&gt;.
+                    </div>
+
+                    <footer>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="2.4">
+                    <header>
+                        <h3><b>Imagen 1.1.1</b></h3>
+                    </header>
+                    <div class="imgblock">
+                        <section>
+                            <header></header>
+                            <a href="download.png" download><img src="img/download.png" alt="img/download.png" width="500" style="text-align:center;"></a>
+                            <footer>
+                                <h6>&emsp;&gt;&gt;&gt;¡Haz click en la imagen!&lt;&lt;&lt;</h6>
+                            </footer>
+                        </section>
+                    </div>
+
+                    <footer>
+                        <p><a href="#index">Volver al inicio</a>&emsp;</p>
+                    </footer>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="c3">
+            <header class="classno">
+                <br>&emsp;<br>
+                <br>&emsp;<br>
+                <h2><i> ► Clase 3</i></h2>
+            </header>
+
+            <div>
+
+                <article class="mainarticle" id="3.1">
+                    <header>
+                        <h3><b>Atributos</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Los atributos permiten manejar y modificar el comportamiento de los elementos del HTML.
+                        <br><br><br> En términos generales existen 2 tipos de atributos, que son:
+                        <br><br>
+                        <br>► Comunes:
+                        <br>&emsp;&emsp;Su sintáxis es: &lt;etiqueta atributo="valor"&gt;
+                        <br><br>► Booleanos:
+                        <br>&emsp;&emsp;Su sintáxis es: &lt;etiqueta atributo&gt;
+                    </div>
+
+                    <footer>
+                        <p><a href="#index">Volver al inicio</a>&emsp;</p>
+                    </footer>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="c4">
+            <header class="classno">
+                <br>&emsp;<br>
+                <br>&emsp;<br>
+                <h2><i> ► Clase 4</i></h2>
+            </header>
+
+            <div>
+                <article class="mainarticle" id="4.1">
+                    <header>
+                        <h3><b>Enlace</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Los enlaces o links sirven para conectar una página web con otra, y se pueden utilizar como un recurso tanto interno como externo.
+                        <br><br><br> Llevan el atributo obligatorio href, en el cuál se especifica la ruta que se va a utilizar.
+                        <br><br><br> Si ambos documentos están en la misma ubicación, basta con colocar el nombre del archivo, de lo contrario habrá que especificar la ruta completa.
+                        <br><br> Su sintáxis es:
+                        <br><br> &lt;a href="http://ww.url.com"&gt;Texto&lt;/a&gt;
+                        <br><br><br> Existen 2 tipos de rutas, que son las siguientes:
+                        <br>
+                        <br>► Relativas:
+                        <br>&emsp;&emsp;Pueden ser relativas al punto donde nos encontramos o a la raíz del proyecto.
+                        <br><br>► Absolutas:
+                        <br>&emsp;&emsp;Tienen un protocolo http o https y son únicas en la red. se suelen utiliar para rutas ajenas al sistema.
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="4.2">
+                    <header>
+                        <h3><b>Target</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Se coloca de manera inmediata después del href, de la siguiente forma:
+                        <br><br> &lt;a href="" target="_blank"&gt; &lt;/a&gt;
+                        <br><br> y su principal uso es definir el modo de apertura del recurso solcitado. el valor sólo puede ser _self o _blank, siendo _self el valor por defecto.
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="4.3">
+                    <header>
+                        <h3><b>Download</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Es un atributo tipo booleano, sirve para poder descargar el recurso solicitado. Dicho recurso debe encontrarse en nuestro servidor para poder ejecutarlo. su sintáxis es
+                        <br><br> &lt;a href="" download&gt; &lt;/a&gt;
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="4.4">
+                    <header>
+                        <h3><b>Saltos entre etiquetas</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        A demás de llevar a otras páginas, href también puede llevarnos a otros lugars dentro dde la misma página, a través del uso de un id.
+                        <br><br> &lt;a href="#id"&gt;Texto&lt;/a&gt;
+                    </div>
+
+                    <footer>
+                        <p><a href="#index">Volver al inicio</a>&emsp;</p>
+                    </footer>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="c5">
+            <header class="classno">
+                <br>&emsp;<br>
+                <br>&emsp;<br>
+                <h2><i> ► Clase 5</i></h2>
+            </header>
+
+            <div>
+                <article class="mainarticle" id="5.1">
+                    <header>
+                        <h3><b>Listas</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Las listas en HTML sirven para enumerar contenido, con o sin un órden específico. existen 3 tipos de etiquetas que se pueden utilizar en la creación de listas en HTML, y son las siguientes:
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="subarticle" id="5.1.2">
+                    <header>
+                        <h3><b>&lt;ul&gt; - unordered list</b></h3>
+                    </header>
+                    <div class="textblock">
+                        Vienen en desorden los objetos listados, y pueden ser enumerados con viñetas de distintos estilos a través del atributo <i>style</i>, con el subatributo <i>list-style-type</i>:
+                        <br>
+                        <ul style="list-style-type:disc">
+                            <li>disc</li>
+                        </ul>
+                        <ul style="list-style-type:circle">
+                            <li>circle</li>
+                        </ul>
+                        <ul style="list-style-type:square">
+                            <li>square</li>
+                        </ul>
+                        <ul style="list-style-type:none">
+                            <li>👀 none</li>
+                        </ul>
+
+                        <br>sintáxis:
+                        <div class="codeblock">
+                            <pre>
+                    <code>
+
+                      <br>&lt;ul style:"list-style-type:none"&gt;
+                      <br>&emsp;&emsp;&lt;li&gt;Objeto 1&lt;/li&gt;
+                      <br>&emsp;&emsp;&lt;li&gt;Objeto 2&lt;/li&gt;
+                      <br>&lt;/ul&gt;
+
+                    </code>
+                  </pre>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="subarticle" id="5.1.3">
+                    <header>
+                        <h3><b>&lt;ol&gt; - ordered list</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Es una lista que permite ver los objetos de forma ordenada, y puede ordenarse a través de números ordinarios, letras y números romanos a través del atributo
+                        <i>type</i>:
+                        <ol type="1">
+                            <li>Numerados</li>
+                            <li>type="1"</li>
+                        </ol>
+                        <ol type="A">
+                            <li>Letras mayúsculas</li>
+                            <li>type="A"</li>
+                        </ol>
+                        <ol type="a">
+                            <li>Letras minúsculas</li>
+                            <li>type="a"</li>
+                        </ol>
+                        <ol type="I">
+                            <li>Números romanos (Mayús)</li>
+                            <li>type="I"</li>
+                        </ol>
+                        <ol type="i">
+                            <li>Números romanos (Minús)</li>
+                            <li>type="i"</li>
+                        </ol>
+
+                        <br>Sintáxis:
+                        <div class="codeblock">
+                            <pre>
+                  <code>
+
+                    <br>&lt;ol&gt;
+                    <br>&emsp;&emsp;&lt;li&gt;Objeto 1&lt;/li&gt;
+                    <br>&emsp;&emsp;&lt;li&gt;Objeto 2&lt;/li&gt;
+                    <br>&lt;/ol&gt;
+
+                  </code>
+                </pre>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="subarticle" id="5.1.4">
+                    <header>
+                        <h3><b>&lt;dl&gt; - definition list</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        <br>Permite crear una lista de pares, con palabras clave contra definiciones.
+                        <br>Sintáxis:
+                        <br><br><br>
+                        <div class="codeblock">
+                            <pre>
+                  <code>
+
+                    <br>&lt;dl&gt;
+                    <br>&emsp;&emsp;&lt;dt&gt;Objeto 1&lt;/dt&gt;
+                    <br>&emsp;&emsp;&lt;dd&gt;Descripción&lt;/dd&gt;
+                    <br>&emsp;&emsp;&lt;dt&gt;Objeto 2&lt;/dt&gt;
+                    <br>&emsp;&emsp;&lt;dd&gt;Descripción&lt;/dd&gt;
+                    <br>&lt;/dl&gt;
+
+                  </code>
+                </pre>
+                        </div>
+                        <br> Y se vería de esta forma:
+                        <dl>
+                            <dt>Objeto 1</dt>
+                            <dd>Descripción</dd>
+                            <dt>Objeto 2</dt>
+                            <dd>Descripción</dd>
+                        </dl>
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="5.2">
+                    <header>
+                        <h3><b>Tablas</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        Sirven para mostrar contenido tabulado. la estructura básica se compone de:
+                        <br>
+                        <br>&lt;table&gt; - para encerrar la tabla
+                        <br>&lt;tr&gt; - table row - fila
+                        <br>&lt;td&gt; - table data - celda el numero de celdas en una tabla define el número de columnas.
+                        <br><br> Sintáxis:
+
+                        <div class="codeblock">
+                            <pre>
+                  <code>
+
+                    &lt;table style="border: 1px solid black;"&gt;
+                      &lt;caption&gt;Nombre de la Tabla&lt;/caption&gt;
+                      &lt;thead&gt;
+                        &lt;tr&gt;
+                          &lt;th&gt;&lt;/th&gt;
+                          &lt;th&gt;Columna 1&lt;/th&gt;
+                          &lt;th&gt;Columna 2&lt;/th&gt;
+                          &lt;th&gt;Columna 3&lt;/th&gt;
+                          &lt;th&gt;Columna 4&lt;/th&gt;
+                          &lt;th&gt;Columna 5&lt;/th&gt;
+                        &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;Fila 1&lt;/td&gt;
+                          &lt;td&gt;1&lt;/td&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                          &lt;td&gt;3&lt;/td&gt;
+                          &lt;td&gt;4&lt;/td&gt;
+                          &lt;td&gt;5&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;Fila 2&lt;/td&gt;
+                          &lt;td&gt;4&lt;/td&gt;
+                          &lt;td&gt;3&lt;/td&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                      &lt;tfoot&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;Fila Final&lt;/td&gt;
+                          &lt;td&gt;No hé&lt;/td&gt;
+                          &lt;td&gt;xD&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tfoot&gt;
+                    &lt;/table&gt;
+
+                  </code>
+                </pre>
+                        </div>
+                        <br>Y se vería de la siguiente forma:<br><br>
+                        <table>
+                            <caption>Nombre de la Tabla</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Columna 1</th>
+                                    <th>Columna 2</th>
+                                    <th>Columna 3</th>
+                                    <th>Columna 4</th>
+                                    <th>Columna 5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fila 1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Fila 2</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Fila Final</td>
+                                    <td>No hé</td>
+                                    <td>xD</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="5.3">
+                    <header>
+                        <h3><b>Más etiquetas de bloque</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        <dl type="square">
+                            <dt>►  &lt;address&gt;</dt>
+                            <dd>sirve para anotar información de contacto al article dentro del que se encuentre</dd>
+                            <dt>►  &lt;blockquote&gt;</dt>
+                            <dd>Marca citas de otros autores o documentos. también permite poner un enlace al doc original</dd>
+                            <dt>►  &lt;pre&gt;</dt>
+                            <dd>se utiliza para tener codigo preformateado que necesita ser representado igual que como se escribió</dd>
+                            <dt>►  &lt;div&gt;</dt>
+                            <dd>se utiliza como división del documento, es un contenedor generico</dd>
+                            <dt>►  &lt;hr&gt;</dt>
+                            <dd>sirve para cambiar de tema en el html</dd>
+                            <dt>►  &lt;span&gt;</dt>
+                            <dd>es un contenedor de linea, equivale a div y sirve para encerrar palabras o pequeños textos para su uso con css y js</dd>
+                            <dt>►  &lt;q&gt;</dt>
+                            <dd>equivalente a blockquote pero para una sola linea</dd>
+                            <dt>►  &lt;code&gt;</dt>
+                            <dd>encierra código que se quiera represrntar, suele ir unido con la etiqueta pre.</dd>
+                        </dl>
+                    </div>
+
+                    <footer>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <article class="mainarticle" id="5.4">
+                    <header>
+                        <h3><b>Estructura Avanzada y Formularios</b></h3>
+                    </header>
+
+                    <div class="textblock">
+                        <img src="img/EstructuraAvanzada.png" alt="img/EstructuraAvanzada.png" width="500" style="text-align:center;">
+                        <img src="img/Formularios.png" alt="img/Formularios.png" width="500" style="text-align:center;">
+                    </div>
+
+                    <footer>
+                        <p><a href="#index">Volver al inicio</a>&emsp;</p>
+                    </footer>
+                </article>
+
+            </div>
+
+        </section>
+        <br>&emsp;<br><br>&emsp;<br>
+    </main>
+
+    <footer>
+        <div class="pagefooter">
+            <h6>Mickey Rodriguez™ <time datetime="03-01-2021 23:23">2021</time> todos los derechos reservados.</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
