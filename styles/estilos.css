@@ -3,11 +3,6 @@
     font-size: 3em;
 }
 
-.TituloMain {
-    color: orange;
-    font-size: 3em;
-}
-
 .Texto {
     font-size: 2em;
 }
@@ -39,4 +34,14 @@
 
 .Cita {
     font-size: 2em;
+}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+    color: darkorchid;
 }
