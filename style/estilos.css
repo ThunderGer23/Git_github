@@ -1,7 +1,151 @@
-h1 {
+/*Selectores básicos*/
+
+
+/*Selectores de etiqueta*/
+
+
+/*
+    Los selesctores de etiqueta nos pemiten agegar estilos generales a multiples etiquetas del mismo tipo, no son muy recomendadas si es que se requiere dar un estilo diferente a cada etiqueta.
+*/
+
+body {
     text-align: center;
+    background-color: coral;
 }
+
+
+/*Selectores de clase*/
+
+
+/*
+    Este tipo de selectoes nos siven paa especificar los atributos esteticos que deseamos agegar a todos los elemtos de la misma clase, ya no por etiqueta, esto puede se más util en caso de quere mantener el mismo estilo para toda una sección de código o para dar estilos diferentes a cietos elementos
+*/
 
 .Prueba1 {
     color: blue;
+}
+
+
+/*Selectores de ID*/
+
+
+/*
+    No son recomendados para dar estilo, este tipo de selectores nos es util cuando lleguemos a Javascript, ya que podrémos asigna diferentes compotamientos según sea el caso.
+*/
+
+#Prueba1 {}
+
+
+/*Selectoes universales*/
+
+* {
+    color: coral;
+}
+
+
+/*Selectores de atributo*/
+
+
+/*
+    Estos atributos de aplican en base a los atributos de las etiquetas en nuestro html, por ejemplo:
+*/
+
+
+/*Selecciona los elementos con ese atibuto*/
+
+[href] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto y ese valor*/
+
+[href=#] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto y al menos ese valor una vez*/
+
+[class~="Prueba1"] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto y exactamente ese valor o que inicien con ese valor seguido de un -*/
+
+[class |="Prueba1"] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto e inician con ese valor*/
+
+[class ^="Prueba1"] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto y terminan con ese valor*/
+
+[class $="Prueba1"] {
+    color: darkblue;
+}
+
+
+/*Selecciona los elementos con ese atibuto en cualquier lugar*/
+
+[class *="Prueba1"] {
+    color: darkblue;
+}
+
+
+/*Selectores combinacionales*/
+
+
+/*Selector de hermano adyacente*/
+
+
+/*
+    Su función es verificar que la etiqueta anterior sea la especificada para aplicar los cambios en la etiqueta actual
+*/
+
+section+div {
+    color: darkblue;
+}
+
+
+/*Selector de hermanos general*/
+
+
+/*
+    Busca todos los hermanos que compartan el mismo padre y aplica los cambios a todos los hermanos
+*/
+
+h2~article {
+    color: darkorange;
+}
+
+
+/*Selector decendente*/
+
+
+/*
+    Selecciona todos los hijos de ese estilo que tenga el padre y los modifica
+*/
+
+p span {
+    color: darkgrey;
+}
+
+
+/*Selector de hijo directo*/
+
+
+/*
+    Selecciona solo los hijos directos
+*/
+
+p>span {
+    color: darkolivegreen;
 }
