@@ -5,20 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="stylesheet" href="/style/estilos.css">-->
-    <style>
-        @import url("style/estilos.css");
-    </style>
+    <link rel="stylesheet" href="/style/estilos.css">
     <meta name="theme-color" content="#ffffff">
     <title class="Prueba1">Código del Doc</title>
 </head>
 
-<h1 class="Prueba1">Holo</h1>
+<h1 class="Prueba1" id="P">Holo</h1>
 <h1>Test</h1>
 
 <body>
-    <section>
-        <h2>Lista de alumnos</h2>
+    <section class="Prueba1">
+        <h2 class="Prueba1">Lista de alumnos</h2>
         <article>
             <ul type="circle">
                 <li>Karla Susana Guzmán Velazqez</li>
@@ -26,7 +23,7 @@
             </ul>
 
             <!--Un ejemplo de uso podría ser un menu-->
-            <h4>TEMAS DEL CURSO</h4>
+            <h4 class="Prueba1">TEMAS DEL CURSO</h4>
             <ol>
                 <li>Historia de la web</li>
                 <li>HTML</li>
@@ -74,7 +71,7 @@
     </section>
     <section>
         <form>
-            <h2>Edad</h2>
+            <h2 style="width: 80%;" class="h2 Prueba1 title">Edad</h2>
 
             <label>-18<input type="radio" name="age" /></label>
             <label>18/25<input type="radio" name="age" /></label>
@@ -113,16 +110,14 @@
             </datalist>
         </form>
     </section>
-    <style>
-        video {
-            max-width: 100%;
-        }
-    </style>
-    <section>
-        <audio src="/assets/audio/Rebel - Badass songs that get you pumped ddHuucu0XCY.m4a" controls autoplay muted loop></audio>
 
-        <video src="/assets/video/Plan fundamental de la conmutación.mp4" controls autoplay muted loop poster="/assets/img/img/perro2.jpg"></video>
-    </section>
+    <img style="width: 75%;" srcset="/assets/img/img/1920.jpg,
+    /assets/img/img/720.jpg 2x,
+    /assets/img/img/567.jpg 3x" alt="">
+
+    <video src="/assets/video/Plan fundamental de la conmutación.mp4"></video>
+
+    <audio src="/assets/audio/Rebel - Badass songs that get you pumped ddHuucu0XCY.m4a"></audio>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 
 body {
     text-align: center;
-    background-color: coral;
+    background-color: black;
 }
 
 
@@ -33,7 +33,9 @@ body {
     No son recomendados para dar estilo, este tipo de selectores nos es util cuando lleguemos a Javascript, ya que podrémos asigna diferentes compotamientos según sea el caso.
 */
 
-#Prueba1 {}
+#P {
+    color: chartreuse;
+}
 
 
 /*Selectoes universales*/
@@ -53,8 +55,8 @@ body {
 
 /*Selecciona los elementos con ese atibuto*/
 
-[href] {
-    color: darkblue;
+[src] {
+    width: 75%;
 }
 
 
@@ -75,7 +77,7 @@ body {
 /*Selecciona los elementos con ese atibuto y exactamente ese valor o que inicien con ese valor seguido de un -*/
 
 [class |="Prueba1"] {
-    color: darkblue;
+    color: blanchedalmond;
 }
 
 
