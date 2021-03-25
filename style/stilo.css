@@ -1,7 +1,28 @@
-p+span {
-    font-size: 5cm;
+div>p {
+    text-align: center;
 }
 
-section>div {
-    background-color: red;
+.parrafo {
+    color: salmon;
 }
+
+#parrafo {
+    color: slateblue;
+}
+
+p {
+    color: red;
+}
+
+a {
+    height: 250px;
+}
+
+
+/*span {
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}*/
