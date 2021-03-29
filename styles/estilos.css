@@ -48,5 +48,30 @@ dl {
     margin-left: 0;
     margin-right: 0;
     font-size: 2em;
-    color: darkorchid;
+    color: violet;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+[href="#Inicio"] {
+    color: deeppink;
+}
+
+.articulo {
+    margin: 2em 2em 2em 2em;
+    padding: 1em 2em 4em 5em;
+    border: 3em solid chartreuse;
+    display: flex;
+    /*pone a volar mis etiquetas*/
+}
+
+article+p {
+    color: turquoise;
+}
+
+p {
+    font-size: 2em;
 }
