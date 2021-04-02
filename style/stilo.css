@@ -18,6 +18,48 @@ a {
     height: 250px;
 }
 
+img {
+    max-width: 80%;
+}
+
+.ejemplo {
+    display: none;
+    outline: 1px dotted red;
+    outline-offset: 15px;
+    padding: 2em;
+    margin: 5em 2em 3em 1em;
+    border-top: 2px dotted;
+    border-color: blue;
+    position: relative;
+}
+
+.figure {
+    text-align: center;
+    background-color: lightgrey;
+    border: 5px solid red;
+    border-top-width: 6px;
+    border-right: none;
+    width: 150px;
+    height: 60px;
+}
+
+@keyframes move {
+    from {
+        offset-distance: 0%;
+    }
+    to {
+        offset-distance: 100%;
+    }
+}
+
+#offsetElement {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    offset: path("M 100 100 L 300 100 L 200 300 z") auto;
+    animation: move 3s linear infinite;
+}
+
 
 /*span {
     color: inherit;
