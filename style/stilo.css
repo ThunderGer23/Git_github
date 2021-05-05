@@ -1,70 +1,110 @@
-div>p {
-    text-align: center;
-}
-
-.parrafo {
-    color: salmon;
-}
-
-p {
-    color: pink;
-}
-
-#parrafo {
-    color: slateblue;
-}
-
-a {
-    height: 250px;
-}
-
-img {
-    max-width: 80%;
-}
-
-.ejemplo {
-    display: none;
-    outline: 1px dotted red;
-    outline-offset: 15px;
-    padding: 2em;
-    margin: 5em 2em 3em 1em;
-    border-top: 2px dotted;
-    border-color: blue;
+.madre {
+    width: 650px;
+    height: 600px;
+    margin-left: 25%;
+    margin-top: 10%;
+    border: 5px solid black;
     position: relative;
-}
-
-.figure {
     text-align: center;
-    background-color: lightgrey;
-    border: 5px solid red;
-    border-top-width: 6px;
-    border-right: none;
-    width: 150px;
-    height: 60px;
 }
 
-@keyframes move {
-    from {
-        offset-distance: 0%;
-    }
-    to {
-        offset-distance: 100%;
-    }
+.caja1,
+.caja2,
+.caja3 {
+    width: 3em;
+    height: 2em;
+    margin: 1em;
+    font-size: 1em;
+    text-align: center;
+    border: 10px solid pink;
+    outline: 5px solid green;
 }
 
-#offsetElement {
-    width: 50px;
-    height: 50px;
+.caja1 {
+    background-color: greenyellow;
+    position: relative;
+    top: 120px;
+    left: 40px;
+    z-index: 1;
+}
+
+.caja2 {
+    background-color: indigo;
+    position: relative;
+    left: 50px;
+}
+
+.caja3 {
+    background-color: lightblue;
+    position: relative;
+    bottom: 150px;
+    z-index: -1;
+}
+
+[class ^=caja] {
+    width: 3em;
+    height: 3em;
+}
+
+.caja4 {
+    border: 2px solid pink;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.caja5 {
+    border: 2px solid blue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.caja6 {
+    border: 2px solid yellow;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.caja7 {
+    border: 2px solid orange;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.caja8 {
+    border: 2px solid green;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.menu {
+    background-color: indigo;
+    font-size: 3em;
+    color: lavender;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+
+.footer {
     background-color: blue;
-    offset: path("M 100 100 L 300 100 L 200 300 z") auto;
-    animation: move 3s linear infinite;
+    font-size: 2em;
+    color: coral;
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
 }
 
-
-/*span {
-    color: inherit;
+.titulo {
+    padding-top: 3em;
 }
-
-a {
-    color: inherit;
-}*/
