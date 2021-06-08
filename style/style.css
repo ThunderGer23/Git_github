@@ -1,0 +1,121 @@
+/*
+        Pseudo-elementos
+
+    Se utilizan para dar estilo a partes especificas de un elementos y la sintaxis es la siguiente.
+
+    selector::pseudo-element{estilos}
+    selector:pseudo-clase{estilos}
+
+    Pseudoelementos:
+    ::first-letter(Elementos de bloque)
+    ::first-line(Elementos de bloque)
+    
+    ::selection(Medio muerto para W3M)
+
+    ::before(Elementos inline)
+    ::after(Elementos inline)
+        La propiedad content es obligatoria
+        Hijos del elemento
+*/
+
+.title::first-letter {
+    color: white;
+    font-size: 3em;
+    background-color: coral;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.text::first-line {
+    color: cadetblue;
+}
+
+.text::selection {
+    color: darkolivegreen;
+    background-color: darkorange;
+}
+
+.miPesito::before {
+    content: '$';
+    color: darkred;
+}
+
+.miPesito::after {
+    content: '.00';
+    background-color: darkturquoise;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.inline::first-line {
+    color: darkgoldenrod;
+}
+
+.inline::first-letter {
+    font-size: 2em;
+    background-color: darkmagenta;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+/*          Pseudo-clases 
+    Tenemos multiples pseudo clases las cuales podemos clasificar en 4 grupos y 2 que permanecen aisladas, Target y Language
+    Dinamicas, Estructurales, Estado y Negación
+
+        Dynamic
+    :link (links) -Link no visitado
+    :visited (links) -Link visitado
+    :hover -Al poner el mouse sobre el elemento
+    :active (links) -El momento del click
+    :focus -Cuando el elemento tiene el foco
+
+        Terget
+    :target -Elemento que es objetivo de un marcador o ancla
+
+        Language
+    :lang() -Elemento que contiene el atributo lang que especifiquemos.
+
+        Structural
+    :root
+    :nth-child()
+    :nth-last-child()
+    :nth-of-type()
+    :nth-last-of-type()
+    :first-child
+    :last-child
+    :first-of-type
+    :last-of-type
+    :only-child
+    :only-of-type
+    :empty
+
+        UI States
+    :enabled
+    :disabled
+    :checked
+    :in-range
+    :out-of-range
+    :required
+    :optional
+    :valid
+    :invalid
+    :fullscreen
+
+    Negation 
+
+    :not()
+*/
