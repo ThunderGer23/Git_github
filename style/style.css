@@ -19,7 +19,7 @@
 */
 
 .title::first-letter {
-    color: white;
+    color: maroon;
     font-size: 3em;
     background-color: coral;
     border-radius: 3px;
@@ -31,10 +31,12 @@
 
 .text::first-line {
     color: cadetblue;
+    font-size: 2em;
+    background-color: mediumblue;
 }
 
 .text::selection {
-    color: darkolivegreen;
+    color: white;
     background-color: darkorange;
 }
 
@@ -88,7 +90,67 @@
 
         Language
     :lang() -Elemento que contiene el atributo lang que especifiquemos.
+*/
 
+.link:link {
+    color: red;
+    background-color: violet;
+}
+
+.link:visited {
+    color: royalblue;
+    background-color: yellow;
+}
+
+.link:active {
+    color: tomato;
+    background-color: violet;
+}
+
+.link:hover {
+    font-size: 2em;
+}
+
+.input:focus {
+    background-color: blueviolet;
+    font-size: 3em;
+}
+
+.menu {
+    background: lightblue;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mod {
+    margin-top: 400px;
+    margin-bottom: 900px;
+}
+
+.mod:target {
+    padding-top: 50px;
+}
+
+.span {
+    display: block;
+}
+
+.span:lang(es) {
+    background-color: lightgreen;
+}
+
+.span:lang(en) {
+    background-color: magenta;
+}
+
+
+/*
         Structural
     :root
     :nth-child()
@@ -116,6 +178,5 @@
     :fullscreen
 
     Negation 
-
     :not()
 */
